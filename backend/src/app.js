@@ -1,0 +1,22 @@
+import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+import {rateLimit} from 'express-rate-limit';
+import {ZodError} from 'zod';
+import {config} from './config.js';
+import {query} from './db.js';
+import {authenticate} from './auth.js';
+import {authRoutes} from './routes-auth.js';
+import {postRoutes} from './routes-posts.js';
+import {userRoutes} from './routes-users.js';
+export const app=express();
+app.disable('x-powered-by');app.use(helmet());app.use(cors({origin:config.origin,credentials:true}));app.use(express.json({limit:'20kb'}));
+// Cookies SameSite + comprobación de Origin para operaciones que cambian datos.
+app.use('/api',(req,res,next)=>{if(!['GET','HEAD','OPTIONS'].includes(req.method)&&req.headers.origin&&!([config.origin,`http://127.0.0.1:${config.port}`].includes(req.headers.origin)))return res.status(403).json({message:'Origen no permitido.'});next();});
+app.get('/api/health',async(req,res)=>{await query('SELECT 1');res.json({status:'ok'});});
+app.use('/api/auth',rateLimit({windowMs:15*60*1000,limit:100,standardHeaders:'draft-8',legacyHeaders:false,message:{message:'Demasiados intentos. Intenta de nuevo en 15 minutos.'}}),authRoutes);
+app.use('/api',authenticate);
+app.get('/api/catalogs',async(req,res)=>res.json({semester:config.semester,courses:await query('SELECT * FROM courses ORDER BY code'),teachers:await query('SELECT DISTINCT t.* FROM teachers t JOIN assignments a ON a.teacher_id=t.id WHERE a.semester=? ORDER BY t.name',[config.semester]),assignments:await query('SELECT * FROM assignments WHERE semester=?',[config.semester])}));
+app.use('/api/posts',postRoutes);app.use('/api/users',userRoutes);
+app.use('/api',(req,res)=>res.status(404).json({message:'Ruta no encontrada.'}));
+app.use((err,req,res,next)=>{if(err instanceof ZodError)return res.status(400).json({message:'Revisa los campos del formulario.',errors:err.issues.map(i=>({field:i.path.join('.'),message:i.message}))});if(err.code==='ER_DUP_ENTRY')return res.status(409).json({message:'El registro académico, correo o curso aprobado ya existe.'});if(err.type==='entity.parse.failed')return res.status(400).json({message:'El cuerpo JSON no es válido.'});if(err.status)return res.status(err.status).json({message:err.message});console.error('Error del servidor:',err.code||err.message);res.status(500).json({message:'No se pudo completar la operación. Intenta de nuevo.'});});

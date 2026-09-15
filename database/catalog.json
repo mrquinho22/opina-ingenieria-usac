@@ -1,0 +1,2005 @@
+{
+  "captured_at": "2026-09-15",
+  "plan": "CLAR 2025",
+  "semester": "2026-2",
+  "sources": {
+    "pensum": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar",
+    "horarios": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+  },
+  "courses": [
+    {
+      "code": "0005",
+      "name": "Técnicas de Estudio e Investigación",
+      "credits": 3,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0017",
+      "name": "Área Social Humanística 1",
+      "credits": 3,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0101",
+      "name": "Área Matemática Básica 1",
+      "credits": 9,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0006",
+      "name": "Idioma Técnico 1",
+      "credits": 3,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0039",
+      "name": "Deportes 1",
+      "credits": 2,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0019",
+      "name": "Área Social Humanística 2",
+      "credits": 3,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0103",
+      "name": "Área Matemática Básica 2",
+      "credits": 9,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0147",
+      "name": "Física Básica",
+      "credits": 5,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0768",
+      "name": "Introducción a los Algoritmos y Flujo de Datos",
+      "credits": 4,
+      "area": "2",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0960",
+      "name": "Matemática para Computación 1",
+      "credits": 5,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0008",
+      "name": "Idioma Técnico 2",
+      "credits": 3,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0040",
+      "name": "Deportes 2",
+      "credits": 2,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0089",
+      "name": "Comunicacion Asertiva",
+      "credits": 2,
+      "area": "5",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0107",
+      "name": "Área Matemática Intermedia 1",
+      "credits": 9,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0150",
+      "name": "Física 1",
+      "credits": 5,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0770",
+      "name": "Introducción a la Programación y Computación 1",
+      "credits": 6,
+      "area": "2",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0795",
+      "name": "Lógica de Sistemas",
+      "credits": 3,
+      "area": "5",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0962",
+      "name": "Matemática para Computación 2",
+      "credits": 5,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0001",
+      "name": "Ética Profesional",
+      "credits": 2,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0009",
+      "name": "Idioma Técnico 3",
+      "credits": 3,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0112",
+      "name": "Área Matemática Intermedia 2",
+      "credits": 6,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0114",
+      "name": "Área Matemática Intermedia 3",
+      "credits": 6,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0152",
+      "name": "Física 2",
+      "credits": 6,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0771",
+      "name": "Introducción a la Programación y Computación 2",
+      "credits": 6,
+      "area": "2",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0964",
+      "name": "Organización Computacional",
+      "credits": 4,
+      "area": "3",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "2025",
+      "name": "Prácticas Iniciales",
+      "credits": 0,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0010",
+      "name": "Lógica",
+      "credits": 1,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0011",
+      "name": "Idioma Técnico 4",
+      "credits": 3,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0116",
+      "name": "Matemática Aplicada 3",
+      "credits": 5,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0118",
+      "name": "Matemática Aplicada 1",
+      "credits": 5,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0281",
+      "name": "Sistemas Operativos 1",
+      "credits": 6,
+      "area": "3",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0732",
+      "name": "Estadística 1",
+      "credits": 5,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0772",
+      "name": "Estructuras de Datos",
+      "credits": 6,
+      "area": "2",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0778",
+      "name": "Arquitectura de Computadores y Ensambladores 1",
+      "credits": 5,
+      "area": "3",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0018",
+      "name": "Filosofía de la Ciencia",
+      "credits": 1,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0014",
+      "name": "Economía",
+      "credits": 3,
+      "area": "5",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0601",
+      "name": "Investigación de Operaciones I",
+      "credits": 6,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0722",
+      "name": "Teoría de Sistemas 1",
+      "credits": 4,
+      "area": "5",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0767",
+      "name": "Nuevas Infraestructuras para tic",
+      "credits": 5,
+      "area": "3",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0774",
+      "name": "Sistemas de Bases de Datos 1",
+      "credits": 6,
+      "area": "4",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0796",
+      "name": "Lenguajes Formales y de Programación",
+      "credits": 4,
+      "area": "3",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0120",
+      "name": "Matemática Aplicada 2",
+      "credits": 5,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0122",
+      "name": "Matemática Aplicada 4",
+      "credits": 5,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0200",
+      "name": "Ingeniería Eléctrica 1",
+      "credits": 6,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0603",
+      "name": "Investigación de Operaciones II",
+      "credits": 6,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0707",
+      "name": "Gestión de Proyectos de tic",
+      "credits": 4,
+      "area": "5",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0775",
+      "name": "Sistemas de Bases de Datos 2",
+      "credits": 7,
+      "area": "4",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0777",
+      "name": "Organización de Lenguajes y Compiladores 1",
+      "credits": 6,
+      "area": "3",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0794",
+      "name": "Seminario de Computación",
+      "credits": 4,
+      "area": "3",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "2036",
+      "name": "Prácticas Intermedias",
+      "credits": 0,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0734",
+      "name": "Estadística 2",
+      "credits": 5,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0283",
+      "name": "Análisis y Diseño de Sistemas 1",
+      "credits": 6,
+      "area": "4",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0649",
+      "name": "Contabilidad Financiera para Informáticos",
+      "credits": 3,
+      "area": "5",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0719",
+      "name": "Nuevas Tecnologias para Desarrollo de Software",
+      "credits": 4,
+      "area": "4",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0786",
+      "name": "Sistemas Organizacionales y Gerenciales 1",
+      "credits": 5,
+      "area": "5",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0970",
+      "name": "Redes de Computadoras 1",
+      "credits": 5,
+      "area": "3",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0972",
+      "name": "Inteligencia Artificial 1",
+      "credits": 5,
+      "area": "3",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0700",
+      "name": "Ingeniería Económica 1",
+      "credits": 4,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0776",
+      "name": "Bases de Datos Avanzadas",
+      "credits": 5,
+      "area": "4",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0729",
+      "name": "Modelación y Simulación 1",
+      "credits": 6,
+      "area": "5",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0785",
+      "name": "Análisis y Diseño de Sistemas 2",
+      "credits": 6,
+      "area": "4",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0787",
+      "name": "Sistemas Organizacionales y Gerenciales 2",
+      "credits": 5,
+      "area": "5",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0793",
+      "name": "Seminario de Software",
+      "credits": 4,
+      "area": "4",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0968",
+      "name": "Inteligencia Artificial 2",
+      "credits": 5,
+      "area": "3",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0975",
+      "name": "Redes de Computadoras 2",
+      "credits": 5,
+      "area": "3",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "2009",
+      "name": "Prácticas Finales Ingeniería Ciencias y Sistemas",
+      "credits": 0,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0469",
+      "name": "Ciencia de Datos",
+      "credits": 4,
+      "area": "4",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0613",
+      "name": "Prospectiva Tecnológica",
+      "credits": 5,
+      "area": "5",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0780",
+      "name": "Software Avanzado",
+      "credits": 6,
+      "area": "4",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0790",
+      "name": "Emprendedores de Negocios Informáticos",
+      "credits": 6,
+      "area": "5",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0799",
+      "name": "Seminario de Investigación",
+      "credits": 3,
+      "area": "5",
+      "publication_enabled": true,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0967",
+      "name": "Seguridad Informática",
+      "credits": 4,
+      "area": "3",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0735",
+      "name": "Auditoría de Proyectos de Software",
+      "credits": 6,
+      "area": "5",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "0974",
+      "name": "Redes de Nueva Generación",
+      "credits": 3,
+      "area": "5",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    },
+    {
+      "code": "7999",
+      "name": "Seminario de Investigación E.P.S. Sistemas",
+      "credits": 3,
+      "area": "comun",
+      "publication_enabled": false,
+      "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+    }
+  ],
+  "assignments": [
+    {
+      "code": "0799",
+      "teacher": "DIANA ORALIA SALGUERO ESPANA",
+      "role": "catedratico",
+      "section": "_A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0089",
+      "teacher": "HERMAN IGOR VELIZ LINARES",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0283",
+      "teacher": "WILLIAM SAMUEL GUEVARA ORELLANA",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0283",
+      "teacher": "BYRON ESTUARDO SOLIS GONZALEZ",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0722",
+      "teacher": "JORGE LUIS ALVAREZ MEJIA",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0722",
+      "teacher": "ENNER ESAÍ MENDIZABAL CASTRO",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0729",
+      "teacher": "CESAR AUGUSTO FERNANDEZ CACERES",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0729",
+      "teacher": "ALBEN ADRIAN RAMÍREZ GÓMEZ",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0768",
+      "teacher": "EDGAR FRANCISCO RODAS ROBLEDO",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0768",
+      "teacher": "EMILIANO JOSÉ ALEXANDER VELÁSQUEZ NAJERA",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "MARLON FRANCISCO ORELLANA LOPEZ",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "DIEGO ABRAHAM ROBLES MEZA",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "MARLON ANTONIO PEREZ TURK",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "EDDY ALEJANDRO MURGA BARILLAS",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0772",
+      "teacher": "EDGAR RENE ORNELIS HOIL",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0772",
+      "teacher": "GIOVANNI SAUL CONCOHÁ CAX",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0778",
+      "teacher": "OTTO RENE ESCOBAR LEIVA",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0778",
+      "teacher": "CARLOS ALFREDO BARRIENTOS LÓPEZ",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0780",
+      "teacher": "EVEREST DARWIN MEDINILLA RODRIGUEZ",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0780",
+      "teacher": "JUAN PABLO SAMAYOA RUÍZ",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0785",
+      "teacher": "CLAUDIA LICETH ROJAS MORALES",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0785",
+      "teacher": "KEVIN JOSUE HERNANDEZ GOMEZ",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0786",
+      "teacher": "FERNANDO JOSÉ PAZ GONZÁLEZ",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0786",
+      "teacher": "JOSUÉ DANIEL CAAL TORRES",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0795",
+      "teacher": "VIRGINIA VICTORIA TALA AYERDI",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0795",
+      "teacher": "JENNIFER YULISSA LOURDES TAPERIO MANUEL",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0796",
+      "teacher": "VIVIAN DAMARIS CAMPOS GONZALEZ",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0796",
+      "teacher": "ADRIANA LUCIA OJEDA RIVAS",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0799",
+      "teacher": "CARLOS ALFREDO AZURDIA MORALES",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0964",
+      "teacher": "OTTO RENE ESCOBAR LEIVA",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0964",
+      "teacher": "HENRY DAVID QUEL SANTOS",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0970",
+      "teacher": "LUIS FERNANDO ESPINO BARRIOS",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0970",
+      "teacher": "JOSSELINE GRISELDA MONTECINOS HERNÁNDEZ",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0972",
+      "teacher": "LUIS FERNANDO ESPINO BARRIOS",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0972",
+      "teacher": "ROBERTO MIGUEL GARCÍA SANTIZO",
+      "role": "auxiliar",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0089",
+      "teacher": "KEVIN JOSUE SANTOS SALAZAR",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0283",
+      "teacher": "BYRON ESTUARDO SOLIS GONZALEZ",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0729",
+      "teacher": "ALBEN ADRIAN RAMÍREZ GÓMEZ",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0768",
+      "teacher": "EMILIANO JOSÉ ALEXANDER VELÁSQUEZ NAJERA",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "DIEGO ABRAHAM ROBLES MEZA",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "EDDY ALEJANDRO MURGA BARILLAS",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0772",
+      "teacher": "GIOVANNI SAUL CONCOHÁ CAX",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0778",
+      "teacher": "CARLOS ALFREDO BARRIENTOS LÓPEZ",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0780",
+      "teacher": "JUAN PABLO SAMAYOA RUÍZ",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0785",
+      "teacher": "KEVIN JOSUE HERNANDEZ GOMEZ",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0786",
+      "teacher": "JOSUÉ DANIEL CAAL TORRES",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0795",
+      "teacher": "JENNIFER YULISSA LOURDES TAPERIO MANUEL",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0796",
+      "teacher": "ADRIANA LUCIA OJEDA RIVAS",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0964",
+      "teacher": "HENRY DAVID QUEL SANTOS",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0970",
+      "teacher": "JOSSELINE GRISELDA MONTECINOS HERNÁNDEZ",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0972",
+      "teacher": "ROBERTO MIGUEL GARCÍA SANTIZO",
+      "role": "catedratico",
+      "section": "A",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0014",
+      "teacher": "ILEANA GUISELA RALDA R. DE ILLESCAS",
+      "role": "catedratico",
+      "section": "A+",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0014",
+      "teacher": "KEVIN ESTUARDO SOTOJ GARCÍA",
+      "role": "auxiliar",
+      "section": "A+",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0014",
+      "teacher": "EVELYN CAROLINA MORALES RUIZ",
+      "role": "catedratico",
+      "section": "A-",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0014",
+      "teacher": "ABDIEL FERNANDO JOSÉ OTZOY OTZÍN",
+      "role": "auxiliar",
+      "section": "A-",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0089",
+      "teacher": "CESAR AUGUSTO FERNANDEZ CACERES",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0283",
+      "teacher": "EDGAR FRANCISCO RODAS ROBLEDO",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0283",
+      "teacher": "DOUGLAS JOSUE MARTINEZ HUIT",
+      "role": "auxiliar",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0768",
+      "teacher": "HERMAN IGOR VELIZ LINARES",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0768",
+      "teacher": "JOSUE DANIEL CHAVEZ PORTILLO",
+      "role": "auxiliar",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "WILLIAM ESTUARDO ESCOBAR ARGUETA",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "FERNANDO JOSE VICENTE VELASQUEZ",
+      "role": "auxiliar",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "CLAUDIA LICETH ROJAS MORALES",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "ISAÍ ELIEZER MAGDIEL MOLINA GUEVARA",
+      "role": "auxiliar",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0772",
+      "teacher": "ALVARO OBRAYAN HERNÁNDEZ GARCÍA",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0772",
+      "teacher": "JENS JEREMY PABLO SOSOF",
+      "role": "auxiliar",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0774",
+      "teacher": "LUIS FERNANDO ESPINO BARRIOS",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0774",
+      "teacher": "ESTEPHANIE ALEJANDRA RUÍZ PÉREZ",
+      "role": "auxiliar",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0775",
+      "teacher": "LUIS ALBERTO ARIAS SOLÓRZANO",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0777",
+      "teacher": "MANUEL HAROLDO CASTILLO REYNA",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0777",
+      "teacher": "FERNANDO MISAEL MORALES ORTIZ",
+      "role": "auxiliar",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0778",
+      "teacher": "OTTO RENE ESCOBAR LEIVA",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0778",
+      "teacher": "DIEGO JOSUE GUEVARA ABAJ",
+      "role": "auxiliar",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0780",
+      "teacher": "MARCO TULIO ALDANA PRILLWITZ",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0780",
+      "teacher": "KEVIN RAÚL POZUELOS ESTRADA",
+      "role": "auxiliar",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0785",
+      "teacher": "MIRNA IVONNE ALDANA LARRAZABAL",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0785",
+      "teacher": "JUAN CARLOS ARAGON BAMACA",
+      "role": "auxiliar",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0795",
+      "teacher": "FLORIZA FELIPA AVILA PESQUERA DE MEDINILLA",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0795",
+      "teacher": "DIEGO FERNANDO DEBROY SALAZAR",
+      "role": "auxiliar",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0799",
+      "teacher": "EDGAR ESTUARDO SANTOS SUTUJ",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0964",
+      "teacher": "OTTO RENE ESCOBAR LEIVA",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0964",
+      "teacher": "SERGIO SAUL RALDA MEJIA",
+      "role": "auxiliar",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0968",
+      "teacher": "FREIRY JAVIER GRAMAJO LOPEZ",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0972",
+      "teacher": "FREIRY JAVIER GRAMAJO LOPEZ",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0089",
+      "teacher": "CARLOS FERNANDO ENRIQUE LOPEZ GARCIA",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0283",
+      "teacher": "DOUGLAS JOSUE MARTINEZ HUIT",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0768",
+      "teacher": "JOSUE DANIEL CHAVEZ PORTILLO",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "FERNANDO JOSE VICENTE VELASQUEZ",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "ISAÍ ELIEZER MAGDIEL MOLINA GUEVARA",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0772",
+      "teacher": "JENS JEREMY PABLO SOSOF",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0774",
+      "teacher": "ESTEPHANIE ALEJANDRA RUÍZ PÉREZ",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0775",
+      "teacher": "OTTO ROMAN OLIVAREZ CRUZ",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0777",
+      "teacher": "FERNANDO MISAEL MORALES ORTIZ",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0778",
+      "teacher": "DIEGO JOSUE GUEVARA ABAJ",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0780",
+      "teacher": "KEVIN RAÚL POZUELOS ESTRADA",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0785",
+      "teacher": "JUAN CARLOS ARAGON BAMACA",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0795",
+      "teacher": "DIEGO FERNANDO DEBROY SALAZAR",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0964",
+      "teacher": "SERGIO SAUL RALDA MEJIA",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0972",
+      "teacher": "ALBERTO KANEC IXCHOP ORDOÑEZ",
+      "role": "catedratico",
+      "section": "B",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0796",
+      "teacher": "DAVID ESTUARDO MORALES AJCOT",
+      "role": "catedratico",
+      "section": "B+",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0796",
+      "teacher": "CARLOS SAMUEL AGUILAR ACOSTA",
+      "role": "auxiliar",
+      "section": "B+",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0796",
+      "teacher": "CARLOS SAMUEL AGUILAR ACOSTA",
+      "role": "catedratico",
+      "section": "B+",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0796",
+      "teacher": "ZULMA KARINA AGUIRRE ORDONEZ",
+      "role": "catedratico",
+      "section": "B-",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0796",
+      "teacher": "JOSE ESTUARDO ORELLANA LEONARDO",
+      "role": "auxiliar",
+      "section": "B-",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0796",
+      "teacher": "JOSE ESTUARDO ORELLANA LEONARDO",
+      "role": "catedratico",
+      "section": "B-",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0768",
+      "teacher": "HERMAN IGOR VELIZ LINARES",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0768",
+      "teacher": "JORGE ANDRÉS MEJIA SUCHITE",
+      "role": "auxiliar",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "MOISES EDUARDO VELASQUEZ OLIVA",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "ELÍAS ABRAHAM VASQUEZ SOTO",
+      "role": "auxiliar",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "JOSE MANUEL RUIZ JUAREZ",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "DANIEL EDUARDO VELÁSQUEZ AVILA",
+      "role": "auxiliar",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0772",
+      "teacher": "LUIS FERNANDO ESPINO BARRIOS",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0772",
+      "teacher": "SERGIO SEBASTIÁN SANDOVAL RUIZ",
+      "role": "auxiliar",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0777",
+      "teacher": "KEVIN ADIEL LAJPOP AJPACAJA",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0777",
+      "teacher": "JOHNNY WHILLMAN ALDANA OSORIO",
+      "role": "auxiliar",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0795",
+      "teacher": "FLORIZA FELIPA AVILA PESQUERA DE MEDINILLA",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0795",
+      "teacher": "KERVIN ADOLFO CARDONA RAMÍREZ",
+      "role": "auxiliar",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0799",
+      "teacher": "CARLOS GUSTAVO ALONZO",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0964",
+      "teacher": "FERNANDO JOSÉ PAZ GONZÁLEZ",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0964",
+      "teacher": "EDUARDO ANTONIO REYES PINEDA",
+      "role": "auxiliar",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0768",
+      "teacher": "JORGE ANDRÉS MEJIA SUCHITE",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "ELÍAS ABRAHAM VASQUEZ SOTO",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "DANIEL EDUARDO VELÁSQUEZ AVILA",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0772",
+      "teacher": "SERGIO SEBASTIÁN SANDOVAL RUIZ",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0777",
+      "teacher": "JOHNNY WHILLMAN ALDANA OSORIO",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0795",
+      "teacher": "KERVIN ADOLFO CARDONA RAMÍREZ",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0964",
+      "teacher": "EDUARDO ANTONIO REYES PINEDA",
+      "role": "catedratico",
+      "section": "C",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "HERMAN IGOR VELIZ LINARES",
+      "role": "catedratico",
+      "section": "D",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "ERICK DANIEL PORÓN MUÑOZ",
+      "role": "auxiliar",
+      "section": "D",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "DENNIS STANLEY BARRIOS GONZALEZ",
+      "role": "catedratico",
+      "section": "D",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "JAVIER ALEJANDRO MATÍAS GUARCAS",
+      "role": "auxiliar",
+      "section": "D",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "ERICK DANIEL PORÓN MUÑOZ",
+      "role": "catedratico",
+      "section": "D",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "JAVIER ALEJANDRO MATÍAS GUARCAS",
+      "role": "catedratico",
+      "section": "D",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "NEFTALI DE JESUS CALDERON MENDEZ",
+      "role": "catedratico",
+      "section": "E",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "EDUARDO ISAÍ AJSIVINAC XICO",
+      "role": "auxiliar",
+      "section": "E",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "EDUARDO ISAÍ AJSIVINAC XICO",
+      "role": "catedratico",
+      "section": "E",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "WILLIAM ESTUARDO ESCOBAR ARGUETA",
+      "role": "catedratico",
+      "section": "F",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "JOSÉ LEONEL LÓPEZ AJVIX",
+      "role": "auxiliar",
+      "section": "F",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0770",
+      "teacher": "JOSÉ LEONEL LÓPEZ AJVIX",
+      "role": "catedratico",
+      "section": "F",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "EDWIN ESTUARDO ZAPETA GOMEZ",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "JORGE ANDRÉS MEJIA SUCHITE",
+      "role": "auxiliar",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0774",
+      "teacher": "ÁLVARO GIOVANNI LONGO MORALES",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0774",
+      "teacher": "MATTHEW EMMANUEL REYES MELGAR",
+      "role": "auxiliar",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0775",
+      "teacher": "OTTO AMILCAR RODRIGUEZ ACOSTA",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0777",
+      "teacher": "MARIO JOSE BAUTISTA FUENTES",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0777",
+      "teacher": "LUIS EDUARDO MONROY PÉREZ",
+      "role": "auxiliar",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0786",
+      "teacher": "EDWIN ESTUARDO ZAPETA GOMEZ",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0786",
+      "teacher": "JOSUE DANIEL SOLIS OSORIO",
+      "role": "auxiliar",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0787",
+      "teacher": "MARIO JOSE BAUTISTA FUENTES",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0787",
+      "teacher": "WILLIAM ALEXANDER SANTOS COLINDRES",
+      "role": "auxiliar",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0796",
+      "teacher": "OTTO AMILCAR RODRIGUEZ ACOSTA",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0796",
+      "teacher": "JORGE ESTUARDO PUMAY SOY",
+      "role": "auxiliar",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0970",
+      "teacher": "PEDRO PABLO HERNANDEZ RAMIREZ",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0970",
+      "teacher": "CÉSAR FERNANDO SAZO QUISQUINAY",
+      "role": "auxiliar",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0975",
+      "teacher": "ALLAN ALBERTO MORATAYA GÓMEZ",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0975",
+      "teacher": "DOMINIC JUAN PABLO RUANO PEREZ",
+      "role": "auxiliar",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "JORGE ANDRÉS MEJIA SUCHITE",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0774",
+      "teacher": "MATTHEW EMMANUEL REYES MELGAR",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0775",
+      "teacher": "JOSHUA ALEXANDER VÁSQUEZ DEL AGUILA",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0777",
+      "teacher": "LUIS EDUARDO MONROY PÉREZ",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0786",
+      "teacher": "JOSUE DANIEL SOLIS OSORIO",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0787",
+      "teacher": "WILLIAM ALEXANDER SANTOS COLINDRES",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0796",
+      "teacher": "JORGE ESTUARDO PUMAY SOY",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0970",
+      "teacher": "CÉSAR FERNANDO SAZO QUISQUINAY",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0975",
+      "teacher": "DOMINIC JUAN PABLO RUANO PEREZ",
+      "role": "catedratico",
+      "section": "N",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0281",
+      "teacher": "SERGIO ARNALDO MENDEZ AGUILAR",
+      "role": "catedratico",
+      "section": "P",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0281",
+      "teacher": "JOSE DANIEL LORENZANA MEDINA",
+      "role": "auxiliar",
+      "section": "P",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "FERNANDO JOSÉ PAZ GONZÁLEZ",
+      "role": "catedratico",
+      "section": "P",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "CARLOS MANUEL LIMA Y LIMA",
+      "role": "auxiliar",
+      "section": "P",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0787",
+      "teacher": "LUIS ALBERTO VETTORAZZI ESPANA",
+      "role": "catedratico",
+      "section": "P",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0787",
+      "teacher": "LUIS ALBERTO AMEZQUITA VARGAS",
+      "role": "auxiliar",
+      "section": "P",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0281",
+      "teacher": "JOSE DANIEL LORENZANA MEDINA",
+      "role": "catedratico",
+      "section": "P",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0771",
+      "teacher": "CARLOS MANUEL LIMA Y LIMA",
+      "role": "catedratico",
+      "section": "P",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    },
+    {
+      "code": "0787",
+      "teacher": "LUIS ALBERTO AMEZQUITA VARGAS",
+      "role": "catedratico",
+      "section": "P",
+      "semester": "2026-2",
+      "source": "https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2"
+    }
+  ]
+}

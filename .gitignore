@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+.angular/
+.local/
+tmp/
+.repo-check/
+referencia-login.png
+Actividad - Desarrollo web.pdf
+*.log

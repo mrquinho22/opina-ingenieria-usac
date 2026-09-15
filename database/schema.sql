@@ -1,0 +1,53 @@
+CREATE TABLE IF NOT EXISTS users (
+ id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ academic_record VARCHAR(20) NOT NULL UNIQUE,
+ first_name VARCHAR(80) NOT NULL, last_name VARCHAR(80) NOT NULL,
+ email VARCHAR(254) NOT NULL UNIQUE, password_hash VARCHAR(255) NOT NULL,
+ created_at TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3)
+);
+CREATE TABLE IF NOT EXISTS courses (
+ id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, code VARCHAR(12) NOT NULL UNIQUE,
+ name VARCHAR(150) NOT NULL, credits SMALLINT UNSIGNED NOT NULL,
+ publication_enabled BOOLEAN NOT NULL DEFAULT FALSE,
+ source VARCHAR(500) NOT NULL
+);
+CREATE TABLE IF NOT EXISTS teachers (
+ id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, name VARCHAR(150) NOT NULL,
+ role ENUM('catedratico','auxiliar') NOT NULL DEFAULT 'catedratico',
+ UNIQUE KEY uq_teacher(name,role)
+);
+CREATE TABLE IF NOT EXISTS assignments (
+ id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ course_id INT UNSIGNED NOT NULL, teacher_id INT UNSIGNED NOT NULL,
+ semester VARCHAR(10) NOT NULL, section VARCHAR(12) NOT NULL,
+ source VARCHAR(500) NOT NULL,
+ FOREIGN KEY(course_id) REFERENCES courses(id), FOREIGN KEY(teacher_id) REFERENCES teachers(id),
+ UNIQUE KEY uq_assignment(course_id,teacher_id,semester,section), INDEX idx_semester(semester)
+);
+CREATE TABLE IF NOT EXISTS posts (
+ id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, author_id INT UNSIGNED NOT NULL,
+ course_id INT UNSIGNED NULL, teacher_id INT UNSIGNED NULL,
+ message VARCHAR(3000) NOT NULL, created_at TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+ FOREIGN KEY(author_id) REFERENCES users(id), FOREIGN KEY(course_id) REFERENCES courses(id),
+ FOREIGN KEY(teacher_id) REFERENCES teachers(id),
+ CONSTRAINT exactly_one_target CHECK ((course_id IS NULL) <> (teacher_id IS NULL)),
+ INDEX idx_posts_date(created_at,id)
+);
+CREATE TABLE IF NOT EXISTS comments (
+ id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, post_id INT UNSIGNED NOT NULL,
+ author_id INT UNSIGNED NOT NULL, message VARCHAR(2000) NOT NULL,
+ created_at TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+ FOREIGN KEY(post_id) REFERENCES posts(id), FOREIGN KEY(author_id) REFERENCES users(id),
+ INDEX idx_comments(post_id,created_at,id)
+);
+CREATE TABLE IF NOT EXISTS approved_courses (
+ user_id INT UNSIGNED NOT NULL, course_id INT UNSIGNED NOT NULL,
+ created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ PRIMARY KEY(user_id,course_id),
+ FOREIGN KEY(user_id) REFERENCES users(id), FOREIGN KEY(course_id) REFERENCES courses(id)
+);
+CREATE TABLE IF NOT EXISTS sessions (
+ token_hash CHAR(64) PRIMARY KEY, user_id INT UNSIGNED NOT NULL,
+ expires_at DATETIME NOT NULL, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE,
+ INDEX idx_expiry(expires_at)
+);
