@@ -1,2 +1,50 @@
-{"$schema":"./node_modules/@angular/cli/lib/config/schema.json","version":1,"newProjectRoot":"projects","projects":{"frontend":{"projectType":"application","root":"","sourceRoot":"src","architect":{"build":{"builder":"@angular/build:application","options":{"browser":"src/main.ts","tsConfig":"tsconfig.json","index":"src/index.html","styles":["../node_modules/bootstrap/dist/css/bootstrap.min.css","src/styles.css"],"outputPath":"dist/frontend"},"configurations":{"production":{"outputHashing":"all","budgets":[{"type":"initial","maximumWarning":"800kB","maximumError":"1MB"}]}},"defaultConfiguration":"production"},"serve":{"builder":"@angular/build:dev-server","options":{"buildTarget":"frontend:build"}}}}},"cli":{"analytics":false}}
-
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "frontend": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "src/main.ts",
+            "tsConfig": "tsconfig.json",
+            "index": "src/index.html",
+            "styles": [
+              "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+            "outputPath": "dist/frontend"
+          },
+          "configurations": {
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false
+            },
+            "production": {
+              "outputHashing": "all",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "800kB",
+                  "maximumError": "1MB"
+                }
+              ]
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "options": { "buildTarget": "frontend:build:development" }
+        }
+      }
+    }
+  },
+  "cli": { "analytics": false }
+}

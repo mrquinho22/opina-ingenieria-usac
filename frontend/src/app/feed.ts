@@ -1,19 +1,235 @@
-import {Component,inject,signal,OnInit} from '@angular/core';
-import {FormsModule} from '@angular/forms';
-import {Router,RouterLink} from '@angular/router';
-import {Api,Auth,Catalog,Post,User,errorMessage} from './core';
-import {PostCard} from './post-card';
-@Component({standalone:true,imports:[FormsModule,RouterLink,PostCard],template:`
-<div class="page-intro d-flex justify-content-between align-items-end flex-wrap gap-3"><div><div class="eyebrow">LA EXPERIENCIA SE COMPARTE</div><h1>Tu comunidad, tu perspectiva.</h1><p class="muted mb-0">Opiniones sobre cursos y docentes de Ciencias y Sistemas.</p></div><a routerLink="/new" class="btn btn-primary">+ Crear publicación</a></div>
-<div class="row g-4"><aside class="col-lg-4"><section class="card filters mb-4"><h2 class="h5">Encuentra una opinión</h2><p class="small muted">Filtra el tema que te interesa.</p><form (ngSubmit)="loadPosts()">
-<div class="mb-3"><label for="type" class="form-label">Tipo de publicación</label><select id="type" name="type" [(ngModel)]="type" class="form-select"><option value="">Todas las publicaciones</option><option value="course">Por curso</option><option value="teacher">Por catedrático / auxiliar</option></select></div>
-<div class="mb-3"><label for="courseFilter" class="form-label">Curso específico</label><select id="courseFilter" name="course" [(ngModel)]="courseId" class="form-select"><option value="">Todos los cursos</option>@for(c of catalog()?.courses;track c.id){@if(c.publication_enabled){<option [value]="c.id">{{c.code}} · {{c.name}}</option>}}</select></div>
-<div class="mb-3"><label for="teacherFilter" class="form-label">Catedrático o auxiliar específico</label><select id="teacherFilter" name="teacher" [(ngModel)]="teacherId" class="form-select"><option value="">Todos los docentes</option>@for(t of catalog()?.teachers;track t.id){<option [value]="t.id">{{t.name}} ({{t.role}})</option>}</select></div>
-<div class="mb-3"><label for="courseName" class="form-label">Nombre de curso</label><input id="courseName" name="courseName" [(ngModel)]="courseName" class="form-control" maxlength="150" placeholder="Ej. Programación"></div>
-<div class="mb-3"><label for="teacherName" class="form-label">Nombre de catedrático</label><input id="teacherName" name="teacherName" [(ngModel)]="teacherName" class="form-control" maxlength="150" placeholder="Escribe un nombre"></div><button class="btn btn-primary" [disabled]="loading()">Aplicar filtros</button><button class="btn btn-link" type="button" (click)="clear()">Limpiar</button></form></section>
-<section class="card filters"><h2 class="h5">Busca a un estudiante</h2><form #searchForm="ngForm" (ngSubmit)="findUser()"><label for="searchRecord" class="form-label">Registro académico</label><input id="searchRecord" class="form-control mb-3" name="searchRecord" [(ngModel)]="searchRecord" required pattern="[0-9]{5,20}" inputmode="numeric"><button class="btn btn-outline-primary" [disabled]="searchForm.invalid||searching()">Ver perfil</button></form>@if(searchError()){<p class="text-danger small mt-3" role="alert">{{searchError()}}</p>}</section></aside>
-<section class="col-lg-8" aria-label="Publicaciones"><div class="d-flex justify-content-between mb-3 small muted"><span>{{posts().length}} publicaciones</span><span>Más recientes primero</span></div>
-@if(error()){<div class="alert alert-danger" role="alert">{{error()}} <button class="btn btn-sm btn-outline-danger" (click)="init()">Reintentar</button></div>}
-@if(loading()){<div class="empty-state" role="status">Cargando publicaciones…</div>}@else{@for(p of posts();track p.id){<app-post-card [post]="p"/>}@empty{@if(!error()){<div class="empty-state"><h2 class="h5">Todavía no hay opiniones aquí</h2><p class="muted">Prueba otros filtros o comparte la primera experiencia.</p><a routerLink="/new" class="btn btn-outline-primary">Crear publicación</a></div>}}}</section></div>`})
-export class Feed implements OnInit {api=inject(Api);auth=inject(Auth);router=inject(Router);catalog=signal<Catalog|null>(null);posts=signal<Post[]>([]);error=signal('');loading=signal(false);searching=signal(false);searchError=signal('');type='';courseId='';teacherId='';courseName='';teacherName='';searchRecord='';ngOnInit(){void this.init();}async init(){try{this.catalog.set(await this.api.get<Catalog>('/catalogs'));}catch(e){this.error.set(errorMessage(e));return;}await this.loadPosts();}async loadPosts(){this.loading.set(true);this.error.set('');try{const q=new URLSearchParams();for(const [k,v] of Object.entries({type:this.type,course_id:this.courseId,teacher_id:this.teacherId,course_name:this.courseName.trim(),teacher_name:this.teacherName.trim()}))if(v)q.set(k,v);this.posts.set(await this.api.get<Post[]>('/posts?'+q));}catch(e){this.error.set(errorMessage(e));}finally{this.loading.set(false);}}clear(){this.type=this.courseId=this.teacherId=this.courseName=this.teacherName='';void this.loadPosts();}async findUser(){this.searching.set(true);this.searchError.set('');try{const u=await this.api.get<User>('/users/by-record/'+encodeURIComponent(this.searchRecord));await this.router.navigate(['/profile',u.id]);}catch(e){this.searchError.set(errorMessage(e));}finally{this.searching.set(false);}}}
-
+import { Component, inject, signal, OnInit } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { Router, RouterLink } from "@angular/router";
+import { Api, Auth, Catalog, Post, User, errorMessage } from "./core";
+import { PostCard } from "./post-card";
+@Component({
+  standalone: true,
+  imports: [FormsModule, RouterLink, PostCard],
+  template: ` <div
+      class="page-intro d-flex justify-content-between align-items-end flex-wrap gap-3"
+    >
+      <div>
+        <div class="eyebrow">LA EXPERIENCIA SE COMPARTE</div>
+        <h1>Tu comunidad, tu perspectiva.</h1>
+        <p class="muted mb-0">
+          Opiniones sobre cursos y docentes de Ciencias y Sistemas.
+        </p>
+      </div>
+      <a routerLink="/new" class="btn btn-primary">+ Crear publicación</a>
+    </div>
+    <div class="row g-4">
+      <aside class="col-lg-4">
+        <section class="card filters mb-4">
+          <h2 class="h5">Encuentra una opinión</h2>
+          <p class="small muted">Filtra el tema que te interesa.</p>
+          <form (ngSubmit)="loadPosts()">
+            <div class="mb-3">
+              <label for="type" class="form-label">Tipo de publicación</label
+              ><select
+                id="type"
+                name="type"
+                [(ngModel)]="type"
+                class="form-select"
+              >
+                <option value="">Todas las publicaciones</option>
+                <option value="course">Por curso</option>
+                <option value="teacher">Por catedrático / auxiliar</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="courseFilter" class="form-label"
+                >Curso específico</label
+              ><select
+                id="courseFilter"
+                name="course"
+                [(ngModel)]="courseId"
+                class="form-select"
+              >
+                <option value="">Todos los cursos</option>
+                @for (c of catalog()?.courses; track c.id) {
+                  @if (c.publication_enabled) {
+                    <option [value]="c.id">{{ c.code }} · {{ c.name }}</option>
+                  }
+                }
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="teacherFilter" class="form-label"
+                >Catedrático o auxiliar específico</label
+              ><select
+                id="teacherFilter"
+                name="teacher"
+                [(ngModel)]="teacherId"
+                class="form-select"
+              >
+                <option value="">Todos los docentes</option>
+                @for (t of catalog()?.teachers; track t.id) {
+                  <option [value]="t.id">{{ t.name }} ({{ t.role }})</option>
+                }
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="courseName" class="form-label">Nombre de curso</label
+              ><input
+                id="courseName"
+                name="courseName"
+                [(ngModel)]="courseName"
+                class="form-control"
+                maxlength="150"
+                placeholder="Ej. Programación"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="teacherName" class="form-label"
+                >Nombre de catedrático</label
+              ><input
+                id="teacherName"
+                name="teacherName"
+                [(ngModel)]="teacherName"
+                class="form-control"
+                maxlength="150"
+                placeholder="Escribe un nombre"
+              />
+            </div>
+            <button class="btn btn-primary" [disabled]="loading()">
+              Aplicar filtros</button
+            ><button class="btn btn-link" type="button" (click)="clear()">
+              Limpiar
+            </button>
+          </form>
+        </section>
+        <section class="card filters">
+          <h2 class="h5">Busca a un estudiante</h2>
+          <form #searchForm="ngForm" (ngSubmit)="findUser()">
+            <label for="searchRecord" class="form-label"
+              >Registro académico</label
+            ><input
+              id="searchRecord"
+              class="form-control mb-3"
+              name="searchRecord"
+              [(ngModel)]="searchRecord"
+              required
+              pattern="[0-9]{5,20}"
+              inputmode="numeric"
+            /><button
+              class="btn btn-outline-primary"
+              [disabled]="searchForm.invalid || searching()"
+            >
+              Ver perfil
+            </button>
+          </form>
+          @if (searchError()) {
+            <p class="text-danger small mt-3" role="alert">
+              {{ searchError() }}
+            </p>
+          }
+        </section>
+      </aside>
+      <section class="col-lg-8" aria-label="Publicaciones">
+        <div class="d-flex justify-content-between mb-3 small muted">
+          <span>{{ posts().length }} publicaciones</span
+          ><span>Más recientes primero</span>
+        </div>
+        @if (error()) {
+          <div class="alert alert-danger" role="alert">
+            {{ error() }}
+            <button class="btn btn-sm btn-outline-danger" (click)="init()">
+              Reintentar
+            </button>
+          </div>
+        }
+        @if (loading()) {
+          <div class="empty-state" role="status">Cargando publicaciones…</div>
+        } @else {
+          @for (p of posts(); track p.id) {
+            <app-post-card [post]="p" />
+          } @empty {
+            @if (!error()) {
+              <div class="empty-state">
+                <h2 class="h5">Todavía no hay opiniones aquí</h2>
+                <p class="muted">
+                  Prueba otros filtros o comparte la primera experiencia.
+                </p>
+                <a routerLink="/new" class="btn btn-outline-primary"
+                  >Crear publicación</a
+                >
+              </div>
+            }
+          }
+        }
+      </section>
+    </div>`,
+})
+export class Feed implements OnInit {
+  api = inject(Api);
+  auth = inject(Auth);
+  router = inject(Router);
+  catalog = signal<Catalog | null>(null);
+  posts = signal<Post[]>([]);
+  error = signal("");
+  loading = signal(false);
+  searching = signal(false);
+  searchError = signal("");
+  type = "";
+  courseId = "";
+  teacherId = "";
+  courseName = "";
+  teacherName = "";
+  searchRecord = "";
+  ngOnInit() {
+    void this.init();
+  }
+  async init() {
+    try {
+      this.catalog.set(await this.api.get<Catalog>("/catalogs"));
+    } catch (e) {
+      this.error.set(errorMessage(e));
+      return;
+    }
+    await this.loadPosts();
+  }
+  async loadPosts() {
+    this.loading.set(true);
+    this.error.set("");
+    try {
+      const q = new URLSearchParams();
+      for (const [k, v] of Object.entries({
+        type: this.type,
+        course_id: this.courseId,
+        teacher_id: this.teacherId,
+        course_name: this.courseName.trim(),
+        teacher_name: this.teacherName.trim(),
+      }))
+        if (v) q.set(k, v);
+      this.posts.set(await this.api.get<Post[]>("/posts?" + q));
+    } catch (e) {
+      this.error.set(errorMessage(e));
+    } finally {
+      this.loading.set(false);
+    }
+  }
+  clear() {
+    this.type =
+      this.courseId =
+      this.teacherId =
+      this.courseName =
+      this.teacherName =
+        "";
+    void this.loadPosts();
+  }
+  async findUser() {
+    this.searching.set(true);
+    this.searchError.set("");
+    try {
+      const u = await this.api.get<User>(
+        "/users/by-record/" + encodeURIComponent(this.searchRecord),
+      );
+      await this.router.navigate(["/profile", u.id]);
+    } catch (e) {
+      this.searchError.set(errorMessage(e));
+    } finally {
+      this.searching.set(false);
+    }
+  }
+}
