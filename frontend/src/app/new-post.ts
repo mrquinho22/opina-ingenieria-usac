@@ -60,7 +60,7 @@ import { Api, Catalog, Post, errorMessage } from "./core";
                 @for (c of catalog()!.courses; track c.id) {
                   @if (c.publication_enabled) {
                     <option [ngValue]="c.id">
-                      {{ c.code }} · {{ c.name }}
+                      {{ c.name }}
                     </option>
                   }
                 }
@@ -71,7 +71,7 @@ import { Api, Catalog, Post, errorMessage } from "./core";
               }
             </select>
             <div class="form-text">
-              Catálogo oficial de referencia · semestre
+              Catálogo DTT · semestre
               {{ catalog()!.semester }}.
             </div>
           </div>

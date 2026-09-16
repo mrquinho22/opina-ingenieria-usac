@@ -69,6 +69,7 @@ test("sesión, publicación, comentario y créditos sobreviven reinicio real del
     ).cookie.split(";")[0];
     const courses = (await call("/catalogs")).body.courses;
     const course = courses.find((c) => c.publication_enabled);
+    const approved = courses.find((c) => c.credits !== null);
     const post = (
       await call("/posts", "POST", {
         course_id: course.id,
@@ -79,7 +80,7 @@ test("sesión, publicación, comentario y créditos sobreviven reinicio real del
       message: "Comentario persistente",
     });
     await call(`/users/${user.id}/approved-courses`, "POST", {
-      course_id: course.id,
+      course_id: approved.id,
     });
     await stop(child);
     child = await start();
@@ -91,7 +92,7 @@ test("sesión, publicación, comentario y créditos sobreviven reinicio real del
     );
     assert.equal(
       (await call(`/users/${user.id}`)).body.total_credits,
-      course.credits,
+      approved.credits,
     );
   } finally {
     await stop(child);

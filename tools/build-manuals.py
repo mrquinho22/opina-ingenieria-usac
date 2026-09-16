@@ -55,7 +55,7 @@ def build(name):
         if match:
             path=source.parent/match.group(2);w,h=ImageReader(str(path)).getSize();scale=min(width/w,360/h)
             story.append(KeepTogether([Image(str(path),width=w*scale,height=h*scale),Spacer(1,4),Paragraph(match.group(1)+' - captura real',styles['Caption'] if 'Caption' in styles else styles['BodyOpina']),Spacer(1,12)]));i+=1;continue
-        if line.startswith('# '):story.extend([Paragraph(inline(line[2:]),styles['Title']),Paragraph('Proyecto académico · Versión completa local · 15/09/2026',styles['BodyOpina']),Spacer(1,12)]);i+=1;continue
+        if line.startswith('# '):story.extend([Paragraph(inline(line[2:]),styles['Title']),Paragraph('Proyecto académico · Versión completa · 16/09/2026',styles['BodyOpina']),Spacer(1,12)]);i+=1;continue
         if line.startswith('## '):story.append(Paragraph(inline(line[3:]),styles['Heading2']));i+=1;continue
         if line.startswith('### '):story.append(Paragraph(inline(line[4:]),styles['Heading3']));i+=1;continue
         if line.startswith('- '):story.append(Paragraph('• '+inline(line[2:]),styles['BodyOpina']));i+=1;continue

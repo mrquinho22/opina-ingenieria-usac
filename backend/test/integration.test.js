@@ -84,7 +84,9 @@ test("integración contra MySQL real", async (t) => {
       course = c.courses.find((x) => x.publication_enabled);
       teacher = c.teachers[0];
       assert.ok(course && teacher);
-      assert.equal(c.courses.length, 75);
+      assert.equal(c.courses.filter((x) => x.credits !== null).length, 75);
+      assert.equal(c.courses.filter((x) => x.publication_enabled).length, 34);
+      assert.equal(c.assignments.length, 169);
     },
   );
   await t.test(
@@ -107,8 +109,10 @@ test("integración contra MySQL real", async (t) => {
       ).body;
       assert.equal(postA.author_id, userA);
       assert.equal(postB.author_id, userB);
-      assert.ok(Math.abs(Date.now() - new Date(postA.created_at).getTime()) < 60000,
-        "La fecha del servidor debe representar el instante actual en UTC");
+      assert.ok(
+        Math.abs(Date.now() - new Date(postA.created_at).getTime()) < 60000,
+        "La fecha del servidor debe representar el instante actual en UTC",
+      );
       for (const body of [
         { message: "Sin destino" },
         {
@@ -237,6 +241,61 @@ test("integración contra MySQL real", async (t) => {
       const u = (await b.get("/api/users/" + userA)).body;
       assert.equal(u.total_credits, list[0].credits + list[1].credits);
       assert.equal(u.courses.length, 2);
+    },
+  );
+  await t.test(
+    "catálogo DTT, créditos separados y recarga sin pérdida de datos",
+    async () => {
+      const before = (await a.get("/api/catalogs").expect(200)).body;
+      const dtt = before.courses.filter((c) => c.publication_enabled);
+      assert.equal(dtt.length, 34);
+      assert.ok(
+        dtt.every(
+          (c) =>
+            c.credits === null &&
+            c.source === "https://dtt-ecys.org/resources?r=10",
+        ),
+      );
+      assert.ok(dtt.some((c) => c.name === "Comunicación Asertiva"));
+      assert.ok(
+        dtt.some(
+          (c) => c.name === "Introducción a los Algoritmos y Flujos de Datos",
+        ),
+      );
+      const communication = dtt.find((c) => c.name === "Comunicación Asertiva");
+      const assigned = before.assignments.filter(
+        (x) => x.course_id === communication.id,
+      );
+      assert.equal(assigned.length, 2);
+      assert.ok(
+        assigned.every(
+          (x) =>
+            before.teachers.find((t) => t.id === x.teacher_id).role ===
+            "auxiliar",
+        ),
+      );
+      await a
+        .post(`/api/users/${userA}/approved-courses`)
+        .send({ course_id: communication.id })
+        .expect(400);
+      const profile = (await a.get("/api/users/" + userA)).body;
+      const posts = (await a.get("/api/posts")).body;
+      execFileSync(process.execPath, ["scripts/setup.js"], {
+        cwd: new URL("..", import.meta.url),
+        env: process.env,
+      });
+      execFileSync(process.execPath, ["scripts/seed.js"], {
+        cwd: new URL("..", import.meta.url),
+        env: process.env,
+      });
+      assert.deepEqual((await a.get("/api/catalogs")).body, before);
+      assert.deepEqual((await a.get("/api/users/" + userA)).body, profile);
+      assert.deepEqual((await a.get("/api/posts")).body, posts);
+      const approvedOnly = before.courses.find((c) => c.credits !== null);
+      await a
+        .post("/api/posts")
+        .send({ course_id: approvedOnly.id, message: "No disponible en DTT" })
+        .expect(400);
     },
   );
   await t.test(

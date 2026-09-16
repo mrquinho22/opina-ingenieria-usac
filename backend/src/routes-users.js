@@ -48,8 +48,14 @@ userRoutes.patch("/:id", async (req, res) => {
 userRoutes.post("/:id/approved-courses", async (req, res) => {
   const userId = owner(req),
     b = v.approved.parse(req.body);
-  if (!(await query("SELECT id FROM courses WHERE id=?", [b.course_id])).length)
-    v.fail(400, "El curso no existe.");
+  if (
+    !(
+      await query("SELECT id FROM courses WHERE id=? AND credits IS NOT NULL", [
+        b.course_id,
+      ])
+    ).length
+  )
+    v.fail(400, "Selecciona un curso del pénsum con créditos verificados.");
   await query("INSERT INTO approved_courses(user_id,course_id) VALUES(?,?)", [
     userId,
     b.course_id,

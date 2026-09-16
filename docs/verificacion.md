@@ -52,10 +52,25 @@ Capturas reales en `docs/capturas/`. La fecha inicialmente mostraba seis horas d
 
 Comandos de arranque verificados también en una segunda sesión: script PowerShell de MySQL y `npm run dev`. Se desactivó la vigilancia automática de Node porque producía reinicios repetidos; para aplicar cambios al backend se reinicia el comando. Angular conserva su recarga de desarrollo.
 
-Remoto verificado: https://github.com/mrquinho22/opina-ingenieria-usac.git. Dos commits publicados en main; último `782fe98016eabb0cf2168737711b2062b0a8f8a8`, confirmado con `git ls-remote`. El resto permanece en completa-local. No force push, no reescritura de historia ni contribuciones inventadas.
+El avance parcial se publicó inicialmente en main en `782fe98016eabb0cf2168737711b2062b0a8f8a8`. El 16/09/2026 el propietario autorizó subir la versión completa. Se publica mediante avance normal del historial, sin force push ni contribuciones inventadas.
+
+## Actualización DTT del 16/09/2026
+
+- `npm run build`: correcto; compilación Angular y plantillas estrictas.
+- `npm test`: 13 pruebas aprobadas, cero fallos, con MySQL real.
+- Migración ejecutada en la base local sin eliminar datos. Login de Ana Demo conserva nombre editado y contenido anterior.
+- Prueba nueva: 34 cursos DTT, 169 asignaciones, 75 cursos CLAR; Comunicación Asertiva e Introducción a los Algoritmos y Flujos de Datos disponibles.
+- Secciones sin profesor no reciben un profesor inventado. Practicantes mantienen rol auxiliar.
+- Rechazo de agregar cursos DTT sin créditos como aprobados; rechazo de publicar sobre cursos exclusivos del pénsum.
+- Repetir setup y seed conserva IDs, publicaciones, perfiles, sesiones y créditos; el catálogo no se duplica.
+- Prueba independiente de reinicio de Express: persisten sesión, publicación, comentario y créditos.
+- Navegador: acceso, creación de publicación de demostración sobre Comunicación Asertiva y visualización de datos anteriores comprobados.
+- DTT se leyó en la sesión del 15/09; los intentos de descarga del 16/09 agotaron tiempo. El TSV conserva la transcripción utilizada, sin enlaces a reuniones ni datos de cuentas del usuario.
 
 ## Alcance de las comprobaciones
 
 Se generaron los tres PDF desde sus fuentes Markdown y se revisaron visualmente todas las páginas renderizadas. Se ajustaron los saltos para mantener los títulos con su contenido. Las capturas de escritorio corresponden a recorridos reales.
 
 No se realizó auditoría de seguridad profesional, prueba de carga, despliegue HTTPS público ni validación en dispositivos físicos. Responsive se comprobó en navegador con viewport móvil. La recuperación cumple el mecanismo académico, pero requiere verificación adicional antes de uso público. La revisión visual de PDF se realiza sobre los archivos generados y sus páginas renderizadas.
+
+Comprobación adicional en navegador del 16/09: filtro exacto Comunicación Asertiva devuelve únicamente su publicación; perfil Ana María Demo conserva dos aprobados y 15 créditos CLAR; cierre de sesión ejecutado. Manuales PDF regenerados y revisados visualmente.

@@ -74,3 +74,7 @@ El total usa los créditos CLAR del catálogo. El historial es declarado por el 
 La navegación y formularios se adaptan al ancho disponible. En teléfono los filtros aparecen antes del listado; desplazarse hacia abajo para ver opiniones. Si aparece un error de conexión, comprobar que Express y MySQL estén iniciados. Si la sesión expira, volver a iniciar sesión.
 
 Las capturas se obtuvieron de la aplicación el 15/09/2026. Los datos de demostración no representan evaluaciones reales de docentes.
+
+## Catálogos actualizados el 16/09/2026
+
+Las publicaciones usan 34 cursos y 169 asignaciones de DTT, segundo semestre de 2026. Los practicantes finales se representan con rol auxiliar. Los profesores no publicados se dejan ausentes. Los cursos aprobados usan los 75 cursos del pénsum CLAR 2025 y sus créditos verificados. No se equiparan automáticamente materias de planes distintos.

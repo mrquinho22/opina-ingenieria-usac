@@ -44,7 +44,7 @@ Los valores se separan de la instrucción SQL. Las comillas del mensaje se guard
 7. Explicar recuperación y limitación académica; usar cuenta de prueba (1 min).
 8. Mostrar restricciones SQL y resultados de tests/build (2 min).
 
-Preparar MySQL antes de la calificación. El catálogo está incluido y no se necesita Internet para las pantallas. No cambiar a main durante la demostración: contiene el avance parcial.
+Preparar MySQL antes de la calificación. El catálogo está incluido y no se necesita Internet para las pantallas. main contiene la versión completa; completa-local conserva la copia de trabajo.
 
 ## Preguntas posibles
 
@@ -87,3 +87,9 @@ Preparar MySQL antes de la calificación. El catálogo está incluido y no se ne
 ## Práctica recomendada
 
 Para cada acción, localizar el componente, la ruta y la tabla. Después provocar una entrada inválida y explicar qué capa la rechaza. Revisar las pruebas ayuda a comprender restricciones y permisos basados en el código real.
+
+## Catálogos actualizados el 16/09/2026
+
+Las publicaciones usan 34 cursos y 169 asignaciones de DTT, segundo semestre de 2026. Los practicantes finales se representan con rol auxiliar. Los profesores no publicados se dejan ausentes. Los cursos aprobados usan los 75 cursos del pénsum CLAR 2025 y sus créditos verificados. No se equiparan automáticamente materias de planes distintos.
+
+Los códigos DTT-* son identificadores internos; la selección de publicaciones muestra el nombre. Los registros históricos siguen visibles y se pueden buscar por nombre. La lista para nuevas publicaciones usa exclusivamente DTT.

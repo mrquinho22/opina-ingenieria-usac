@@ -4,10 +4,10 @@ Aplicación universitaria para publicar opiniones de cursos y docentes, comentar
 
 ## Ramas y publicación
 
-- GitHub / `main`: **avance parcial**, commit `782fe98016eabb0cf2168737711b2062b0a8f8a8`.
-- `completa-local`: implementación completa, pruebas y manuales; **conservada localmente, sin subir**, por solicitud del propietario.
+- GitHub / main: versión completa, con catálogo DTT del segundo semestre de 2026.
+- completa-local: copia de trabajo completa conservada localmente.
 - Repositorio: https://github.com/mrquinho22/opina-ingenieria-usac
-- Sin PR: el repositorio estaba vacío y se solicitó publicar únicamente un avance parcial.
+- El avance parcial se conserva en el historial; la actualización completa no reescribe commits.
 
 ## Ejecutar en esta computadora
 
@@ -30,7 +30,6 @@ cd opina-ingenieria-usac
 npm ci
 ```
 
-El remoto contiene solo el avance parcial hasta que se solicite publicar la versión completa. Para trasladar la versión local antes de publicarla, usar una copia de trabajo o paquete Git local.
 
 1. Abrir `database/create-user.example.sql` en MySQL Workbench como administrador. Cambiar la contraseña ilustrativa y ejecutar.
 2. Copiar `.env.example` y ajustar host, puerto, usuario, contraseña y nombre de base:
@@ -66,7 +65,7 @@ Angular: http://127.0.0.1:4200. API: http://127.0.0.1:3000/api. No alternar `loc
 | `npm run build`          | Compilar Angular                                            |
 | `npm start`              | Servir API y frontend compilado en puerto 3000              |
 | `npm run db:setup`       | Crear esquema sin borrar datos                              |
-| `npm run db:seed`        | Catálogo y cuentas demo, sin sobrescribir existentes        |
+| `npm run db:seed`        | Catálogo y cuentas demo, sin sobrescribir cuentas existentes        |
 | `npm test`               | Pruebas contra `opina_test`, incluido reinicio HTTP en 3101 |
 
 Para `npm start`, compilar primero. En HTTP local mantener `NODE_ENV=development`; `production` activa cookies Secure y requiere HTTPS. No se realiza despliegue público.
@@ -111,7 +110,7 @@ Node 24.15.0; npm 11.12.1; Angular 22.1.6; TypeScript 6.0.3; Bootstrap 5.3.8; Ex
 
 ## Restauración sin afectar datos existentes
 
-Los scripts no usan DROP ni TRUNCATE. `db:setup` aplica `IF NOT EXISTS` y `db:seed` conserva usuarios existentes, incluidas sus contraseñas. Para una instalación limpia crear **otra base** (por ejemplo `opina_demo_nueva`), conceder permisos al usuario, cambiar DB_NAME y ejecutar setup/seed. Conservar la anterior.
+Los scripts no usan DROP ni TRUNCATE. `db:setup` aplica `IF NOT EXISTS` y una migración idempotente para créditos desconocidos y `db:seed` conserva usuarios existentes, incluidas sus contraseñas. Para una instalación limpia crear **otra base** (por ejemplo `opina_demo_nueva`), conceder permisos al usuario, cambiar DB_NAME y ejecutar setup/seed. Conservar la anterior.
 
 Las pruebas usan exclusivamente `opina_test` con registros únicos; no utilizar ese nombre para datos personales. Las ejecuciones acumulan datos intencionalmente.
 
@@ -130,4 +129,4 @@ Respaldar con Workbench o `mysqldump -h 127.0.0.1 -P 3307 -u opina -p --result-f
 
 ## Límites
 
-La recuperación por registro+correo es académica y necesita verificación adicional de identidad antes de uso público. Los aprobados son declaraciones del usuario, sin validar prerrequisitos ni certificar historial. DTT no respondió; se usaron fuentes oficiales alternativas. No se incluyen calificaciones numéricas, moderación ni edición/borrado de publicaciones porque el enunciado no las exige.
+La recuperación por registro+correo es académica y necesita verificación adicional de identidad antes de uso público. Los aprobados son declaraciones del usuario, sin validar prerrequisitos ni certificar historial. Publicaciones: 34 cursos DTT y 169 asignaciones; aprobados: 75 cursos del pénsum CLAR 2025. No se incluyen calificaciones numéricas, moderación ni edición/borrado de publicaciones porque el enunciado no las exige.

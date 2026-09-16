@@ -49,12 +49,13 @@ app.get("/api/catalogs", async (req, res) =>
     semester: config.semester,
     courses: await query("SELECT * FROM courses ORDER BY code"),
     teachers: await query(
-      "SELECT DISTINCT t.* FROM teachers t JOIN assignments a ON a.teacher_id=t.id WHERE a.semester=? ORDER BY t.name",
+      "SELECT DISTINCT t.* FROM teachers t JOIN assignments a ON a.teacher_id=t.id WHERE a.semester=? AND a.source='https://dtt-ecys.org/resources?r=10' ORDER BY t.name",
       [config.semester],
     ),
-    assignments: await query("SELECT * FROM assignments WHERE semester=?", [
-      config.semester,
-    ]),
+    assignments: await query(
+      "SELECT * FROM assignments WHERE semester=? AND source='https://dtt-ecys.org/resources?r=10'",
+      [config.semester],
+    ),
   }),
 );
 app.use("/api/posts", postRoutes);
@@ -64,21 +65,17 @@ app.use("/api", (req, res) =>
 );
 app.use((err, req, res, next) => {
   if (err instanceof ZodError)
-    return res
-      .status(400)
-      .json({
-        message: "Revisa los campos del formulario.",
-        errors: err.issues.map((i) => ({
-          field: i.path.join("."),
-          message: i.message,
-        })),
-      });
+    return res.status(400).json({
+      message: "Revisa los campos del formulario.",
+      errors: err.issues.map((i) => ({
+        field: i.path.join("."),
+        message: i.message,
+      })),
+    });
   if (err.code === "ER_DUP_ENTRY")
-    return res
-      .status(409)
-      .json({
-        message: "El registro académico, correo o curso aprobado ya existe.",
-      });
+    return res.status(409).json({
+      message: "El registro académico, correo o curso aprobado ya existe.",
+    });
   if (err.type === "entity.parse.failed")
     return res.status(400).json({ message: "El cuerpo JSON no es válido." });
   if (err.status) return res.status(err.status).json({ message: err.message });

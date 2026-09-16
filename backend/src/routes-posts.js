@@ -55,7 +55,7 @@ postRoutes.post("/", async (req, res) => {
       v.fail(400, "Selecciona un curso del catálogo de publicaciones.");
   } else {
     const rows = await query(
-      "SELECT id FROM assignments WHERE teacher_id=? AND semester=?",
+      "SELECT id FROM assignments WHERE teacher_id=? AND semester=? AND source='https://dtt-ecys.org/resources?r=10'",
       [b.teacher_id, config.semester],
     );
     if (!rows.length) v.fail(400, "Selecciona un docente del semestre actual.");

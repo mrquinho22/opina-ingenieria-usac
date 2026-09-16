@@ -1,14 +1,14 @@
 # Lista de cumplimiento
 
-Fuente: PDF de cinco páginas «Actividad - Desarrollo web», segundo semestre 2026. Esta lista corresponde a **completa-local**; el remoto main contiene el avance parcial autorizado.
+Fuente: PDF de cinco páginas «Actividad - Desarrollo web», segundo semestre 2026. Esta lista corresponde a la versión completa publicada en main y conservada en completa-local.
 
 | Requisito del PDF                                    | Ubicación                          | Verificación                            | Estado                                |
 | ---------------------------------------------------- | ---------------------------------- | --------------------------------------- | ------------------------------------- |
 | Cliente Angular o React, p.2                         | frontend, Angular 22               | Compilación y navegador                 | Cumplido                              |
 | Node como REST API, p.2                              | backend/src/app.js, rutas          | Supertest y HTTP real                   | Cumplido                              |
 | Persistencia en BD, p.2                              | MySQL, database/schema.sql         | Reinicio de proceso y consultas         | Cumplido                              |
-| Cursos Sistemas, semestre actual, p.2                | catalog.json; import-catalog.py    | Pénsum/horario oficial 2026-2           | Cumplido con alternativa a DTT        |
-| Repositorio y varios commits, p.3                    | main y completa-local              | git log, ls-remote                      | Avance parcial publicado según pedido |
+| Cursos Sistemas, semestre actual, p.2                | catalog.json; import-catalog.mjs    | DTT 2026-2 y prueba de catálogo           | Cumplido con DTT        |
+| Repositorio y varios commits, p.3                    | main y completa-local              | git log, ls-remote                      | Versión completa autorizada |
 | Login de usuarios registrados, p.3                   | auth-page.ts; routes-auth.js       | Login correcto/incorrecto, API/UI       | Cumplido                              |
 | Referencia visual de acceso, p.3                     | auth-page.ts, styles.css           | Captura login.png                       | Cumplido con diseño propio            |
 | Registro con cinco campos, pp.3-4                    | validation.js; /auth/register      | Registro válido, inválido y duplicado   | Cumplido                              |
@@ -44,9 +44,9 @@ Fuente: PDF de cinco páginas «Actividad - Desarrollo web», segundo semestre 2
 | .env.example, .gitignore, lockfile      | Raíz y backend/frontend             | Cumplido |
 | Documentación editable y PDF            | Markdown + output/pdf               | Cumplido |
 | Guion y preguntas basadas en código     | docs/estudio.md                     | Cumplido |
-| Versión completa solo local             | completa-local sin upstream         | Cumplido |
-| Remoto verificado sin force push        | origin/main = 782fe98               | Cumplido |
+| Versión completa en GitHub y local             | main y completa-local         | Cumplido |
+| Remoto verificado sin force push        | git ls-remote y commit local               | Cumplido |
 
 ## Límites reales
 
-DTT no respondió. Se usaron dos fuentes oficiales alternativas y se documentó el criterio: materias con área propia en la red CLAR y oferta encontrada en 2026-2. No se mezclaron planes ni se inventaron asignaciones. Las reglas de asistencia, conformación del grupo y entrega en UEDI no son funciones de software; las debe atender el estudiante. La publicación completa se hará solo cuando el propietario la solicite.
+DTT se leyó en navegador el 15/09/2026; se conserva una transcripción reproducible de la tabla. No publica créditos: los aprobados utilizan el pénsum CLAR. Las reglas de asistencia, grupo y entrega en UEDI corresponden al estudiante.

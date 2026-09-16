@@ -1,0 +1,602 @@
+[
+  {
+    "code": "0005",
+    "name": "Técnicas de Estudio e Investigación",
+    "credits": 3,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0017",
+    "name": "Área Social Humanística 1",
+    "credits": 3,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0101",
+    "name": "Área Matemática Básica 1",
+    "credits": 9,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0006",
+    "name": "Idioma Técnico 1",
+    "credits": 3,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0039",
+    "name": "Deportes 1",
+    "credits": 2,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0019",
+    "name": "Área Social Humanística 2",
+    "credits": 3,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0103",
+    "name": "Área Matemática Básica 2",
+    "credits": 9,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0147",
+    "name": "Física Básica",
+    "credits": 5,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0768",
+    "name": "Introducción a los Algoritmos y Flujo de Datos",
+    "credits": 4,
+    "area": "2",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0960",
+    "name": "Matemática para Computación 1",
+    "credits": 5,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0008",
+    "name": "Idioma Técnico 2",
+    "credits": 3,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0040",
+    "name": "Deportes 2",
+    "credits": 2,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0089",
+    "name": "Comunicacion Asertiva",
+    "credits": 2,
+    "area": "5",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0107",
+    "name": "Área Matemática Intermedia 1",
+    "credits": 9,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0150",
+    "name": "Física 1",
+    "credits": 5,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0770",
+    "name": "Introducción a la Programación y Computación 1",
+    "credits": 6,
+    "area": "2",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0795",
+    "name": "Lógica de Sistemas",
+    "credits": 3,
+    "area": "5",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0962",
+    "name": "Matemática para Computación 2",
+    "credits": 5,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0001",
+    "name": "Ética Profesional",
+    "credits": 2,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0009",
+    "name": "Idioma Técnico 3",
+    "credits": 3,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0112",
+    "name": "Área Matemática Intermedia 2",
+    "credits": 6,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0114",
+    "name": "Área Matemática Intermedia 3",
+    "credits": 6,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0152",
+    "name": "Física 2",
+    "credits": 6,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0771",
+    "name": "Introducción a la Programación y Computación 2",
+    "credits": 6,
+    "area": "2",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0964",
+    "name": "Organización Computacional",
+    "credits": 4,
+    "area": "3",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "2025",
+    "name": "Prácticas Iniciales",
+    "credits": 0,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0010",
+    "name": "Lógica",
+    "credits": 1,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0011",
+    "name": "Idioma Técnico 4",
+    "credits": 3,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0116",
+    "name": "Matemática Aplicada 3",
+    "credits": 5,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0118",
+    "name": "Matemática Aplicada 1",
+    "credits": 5,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0281",
+    "name": "Sistemas Operativos 1",
+    "credits": 6,
+    "area": "3",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0732",
+    "name": "Estadística 1",
+    "credits": 5,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0772",
+    "name": "Estructuras de Datos",
+    "credits": 6,
+    "area": "2",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0778",
+    "name": "Arquitectura de Computadores y Ensambladores 1",
+    "credits": 5,
+    "area": "3",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0018",
+    "name": "Filosofía de la Ciencia",
+    "credits": 1,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0014",
+    "name": "Economía",
+    "credits": 3,
+    "area": "5",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0601",
+    "name": "Investigación de Operaciones I",
+    "credits": 6,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0722",
+    "name": "Teoría de Sistemas 1",
+    "credits": 4,
+    "area": "5",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0767",
+    "name": "Nuevas Infraestructuras para tic",
+    "credits": 5,
+    "area": "3",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0774",
+    "name": "Sistemas de Bases de Datos 1",
+    "credits": 6,
+    "area": "4",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0796",
+    "name": "Lenguajes Formales y de Programación",
+    "credits": 4,
+    "area": "3",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0120",
+    "name": "Matemática Aplicada 2",
+    "credits": 5,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0122",
+    "name": "Matemática Aplicada 4",
+    "credits": 5,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0200",
+    "name": "Ingeniería Eléctrica 1",
+    "credits": 6,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0603",
+    "name": "Investigación de Operaciones II",
+    "credits": 6,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0707",
+    "name": "Gestión de Proyectos de tic",
+    "credits": 4,
+    "area": "5",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0775",
+    "name": "Sistemas de Bases de Datos 2",
+    "credits": 7,
+    "area": "4",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0777",
+    "name": "Organización de Lenguajes y Compiladores 1",
+    "credits": 6,
+    "area": "3",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0794",
+    "name": "Seminario de Computación",
+    "credits": 4,
+    "area": "3",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "2036",
+    "name": "Prácticas Intermedias",
+    "credits": 0,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0734",
+    "name": "Estadística 2",
+    "credits": 5,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0283",
+    "name": "Análisis y Diseño de Sistemas 1",
+    "credits": 6,
+    "area": "4",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0649",
+    "name": "Contabilidad Financiera para Informáticos",
+    "credits": 3,
+    "area": "5",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0719",
+    "name": "Nuevas Tecnologias para Desarrollo de Software",
+    "credits": 4,
+    "area": "4",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0786",
+    "name": "Sistemas Organizacionales y Gerenciales 1",
+    "credits": 5,
+    "area": "5",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0970",
+    "name": "Redes de Computadoras 1",
+    "credits": 5,
+    "area": "3",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0972",
+    "name": "Inteligencia Artificial 1",
+    "credits": 5,
+    "area": "3",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0700",
+    "name": "Ingeniería Económica 1",
+    "credits": 4,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0776",
+    "name": "Bases de Datos Avanzadas",
+    "credits": 5,
+    "area": "4",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0729",
+    "name": "Modelación y Simulación 1",
+    "credits": 6,
+    "area": "5",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0785",
+    "name": "Análisis y Diseño de Sistemas 2",
+    "credits": 6,
+    "area": "4",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0787",
+    "name": "Sistemas Organizacionales y Gerenciales 2",
+    "credits": 5,
+    "area": "5",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0793",
+    "name": "Seminario de Software",
+    "credits": 4,
+    "area": "4",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0968",
+    "name": "Inteligencia Artificial 2",
+    "credits": 5,
+    "area": "3",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0975",
+    "name": "Redes de Computadoras 2",
+    "credits": 5,
+    "area": "3",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "2009",
+    "name": "Prácticas Finales Ingeniería Ciencias y Sistemas",
+    "credits": 0,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0469",
+    "name": "Ciencia de Datos",
+    "credits": 4,
+    "area": "4",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0613",
+    "name": "Prospectiva Tecnológica",
+    "credits": 5,
+    "area": "5",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0780",
+    "name": "Software Avanzado",
+    "credits": 6,
+    "area": "4",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0790",
+    "name": "Emprendedores de Negocios Informáticos",
+    "credits": 6,
+    "area": "5",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0799",
+    "name": "Seminario de Investigación",
+    "credits": 3,
+    "area": "5",
+    "publication_enabled": true,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0967",
+    "name": "Seguridad Informática",
+    "credits": 4,
+    "area": "3",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0735",
+    "name": "Auditoría de Proyectos de Software",
+    "credits": 6,
+    "area": "5",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "0974",
+    "name": "Redes de Nueva Generación",
+    "credits": 3,
+    "area": "5",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  },
+  {
+    "code": "7999",
+    "name": "Seminario de Investigación E.P.S. Sistemas",
+    "credits": 3,
+    "area": "comun",
+    "publication_enabled": false,
+    "source": "https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar"
+  }
+]

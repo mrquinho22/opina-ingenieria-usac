@@ -15,5 +15,13 @@ await connection.changeUser({ database: config.db.database });
 await connection.query(
   await readFile(new URL("../../database/schema.sql", import.meta.url), "utf8"),
 );
+// Migración idempotente: NULL significa créditos desconocidos en cursos DTT.
+const [columns] = await connection.query(
+  "SHOW COLUMNS FROM courses LIKE 'credits'",
+);
+if (columns[0].Null === "NO")
+  await connection.query(
+    "ALTER TABLE courses MODIFY credits SMALLINT UNSIGNED NULL",
+  );
 await connection.end();
 console.log("Esquema preparado sin eliminar datos.");

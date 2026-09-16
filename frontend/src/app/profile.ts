@@ -221,7 +221,9 @@ export class Profile implements OnInit, OnDestroy {
   available() {
     return (
       this.catalog()?.courses.filter(
-        (c) => !this.user()?.courses?.some((a) => a.id === c.id),
+        (c) =>
+          c.credits !== null &&
+          !this.user()?.courses?.some((a) => a.id === c.id),
       ) || []
     );
   }

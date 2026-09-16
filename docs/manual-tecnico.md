@@ -35,7 +35,7 @@ Angular maneja formularios y navegación. Express valida, autoriza y consulta. M
 | Tabla            | Clave / relaciones        | Restricciones                                |
 | ---------------- | ------------------------- | -------------------------------------------- |
 | users            | PK id                     | Registro y correo UNIQUE; hash bcrypt        |
-| courses          | PK id; código UNIQUE      | Créditos sin signo; indicador de publicación |
+| courses          | PK id; código UNIQUE      | Créditos sin signo o NULL; publicación |
 | teachers         | PK id                     | Nombre+rol UNIQUE; catedratico o auxiliar    |
 | assignments      | FKs curso y docente       | Curso/docente/semestre/sección UNIQUE        |
 | posts            | FKs autor, curso, docente | CHECK exactamente un destino                 |
@@ -47,7 +47,7 @@ Un usuario tiene muchas publicaciones, comentarios, sesiones y aprobados. Una pu
 
 Las claves foráneas impiden referencias inexistentes. Índices adicionales permiten ordenar publicaciones, buscar comentarios y limpiar sesiones caducadas. Los créditos se consultan con JOIN, sin duplicarlos en el historial.
 
-El esquema es versión inicial 1. `db:setup` no migra estructuras existentes, solo crea tablas ausentes; futuros cambios requieren migraciones explícitas.
+`db:setup` crea tablas ausentes y aplica una migración idempotente: permite NULL en courses.credits. NULL indica crédito desconocido, nunca cero. El servidor rechaza esos cursos al agregar aprobados. Los IDs, usuarios, contraseñas, publicaciones y aprobados existentes se conservan.
 
 ## 3. Autenticación y permisos
 
@@ -122,7 +122,7 @@ MySQL fija fechas por DEFAULT CURRENT_TIMESTAMP. Cada conexión usa time_zone='+
 
 Los créditos se suman en el servidor a partir del JOIN con el catálogo. Se utiliza CLAR del plan 2025, sin mezclar el plan anterior. `database/catalog.json` conserva fecha y URLs de procedencia.
 
-`tools/import-catalog.py --download` permite repetir extracción; requiere Python y beautifulsoup4. Revisar cambios antes de cargar. La semilla conserva cursos existentes para no cambiar créditos retrospectivamente; las actualizaciones de plan requieren una migración revisada.
+`node tools/import-catalog.mjs` regenera el catálogo desde las dos capturas versionadas, sin dependencias adicionales ni Internet. Revisar cambios antes de cargar. La semilla conserva nombres y créditos existentes para no cambiar historiales retrospectivamente; las actualizaciones de plan requieren una migración revisada.
 
 ## 7. Ejecución y mantenimiento
 
@@ -131,3 +131,11 @@ Seguir el README para configuración, instalación y respaldo. Las semillas no s
 `npm test` usa MySQL real en opina_test y usuarios únicos. Incluye un proceso en 3101 que crea datos, se detiene y reinicia para verificar sesión, publicación, comentario y créditos. Nunca usar opina_test como base personal.
 
 `npm run build` comprueba tipos y plantillas estrictos y limita tamaño del bundle. `docs/verificacion.md` registra los recorridos de navegador y las limitaciones reales.
+
+## Catálogos actualizados el 16/09/2026
+
+Las publicaciones usan 34 cursos y 169 asignaciones de DTT, segundo semestre de 2026. Los practicantes finales se representan con rol auxiliar. Los profesores no publicados se dejan ausentes. Los cursos aprobados usan los 75 cursos del pénsum CLAR 2025 y sus créditos verificados. No se equiparan automáticamente materias de planes distintos.
+
+Los códigos DTT-* son identificadores internos; la selección de publicaciones muestra el nombre. Los registros históricos siguen visibles y se pueden buscar por nombre. La lista para nuevas publicaciones usa exclusivamente DTT.
+
+Para actualizar una instalación existente: respaldar, ejecutar `npm run db:setup` y luego `npm run db:seed`. La semilla actualiza las banderas del catálogo sin borrar contenido. Las asignaciones anteriores permanecen para trazabilidad; la API de catálogo y las nuevas publicaciones de docentes solo admiten asignaciones con fuente DTT. Para regenerar el JSON: `node tools/import-catalog.mjs`.

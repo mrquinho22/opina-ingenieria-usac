@@ -7,17 +7,17 @@ Fuente principal: «Actividad - Desarrollo web», cinco páginas, Prácticas Ini
 - Auxiliar se representa como docente con rol `auxiliar`. Las publicaciones siguen teniendo exactamente dos destinos posibles: curso o docente.
 - Semestre: `2026-2`. Créditos: CLAR del plan vigente desde 2025. No se mezclan con los créditos del pénsum anterior.
 - Se capturó el pénsum completo (75 entradas), incluidos cursos comunes, optativos y prácticas con cero créditos. Se agregan libremente aprobados, sin validar prerrequisitos, como permite el PDF.
-- Publicaciones: materias marcadas con `area` en la red curricular y con asignación en el horario oficial. Se excluyen cursos sin oferta encontrada en el semestre. Son 26 cursos y 174 asignaciones únicas de curso/docente/rol/sección. DTT no respondió; se documentan las fuentes sustitutas abajo.
-- Los nombres de cursos vienen del pénsum; la unión con horarios se hace por código. Los nombres pueden diferir entre planes. La aplicación muestra un catálogo de referencia, no certifica inscripciones ni historial oficial.
+- Publicaciones: 34 cursos de DTT, 80 secciones y 169 asignaciones únicas. La tabla tenía 97 filas por repetición de secciones con distintos practicantes. Se usan los profesores y practicantes publicados; ocho secciones no publican profesor y no se completa ese dato.
+- Los catálogos DTT y CLAR se mantienen separados, sin suponer equivalencias entre planes. DTT usa códigos internos DTT-* (no oficiales), nombres legibles y créditos NULL; esos cursos no se pueden agregar como aprobados. Los nombres personales conservan el orden apellidos, nombres publicado en DTT.
 - Recuperación académica: registro + correo + nueva contraseña; invalida todas las sesiones. Antes de uso público requiere verificación adicional (por ejemplo enlace de un solo uso al correo).
 - Sesión opaca de 8 horas en MySQL. Cookie HttpOnly/SameSite; hash del token en la base. Identidad exclusivamente del servidor.
 - La interfaz es propia y usa el ejemplo del PDF como referencia de disposición del formulario; no solicita credenciales institucionales.
-- Versionamiento solicitado: publicar un avance parcial honesto en `main`; conservar la aplicación terminada en `completa-local` sin subirla todavía.
+- Versionamiento actualizado por el propietario: publicar ahora toda la implementación en main y conservar la copia local.
 
 ## Fuentes oficiales consultadas el 15/09/2026
 
-- Enlace del PDF (no disponible durante revisión): https://dtt-ecys.org/resources?r=10
+- DTT: lectura de navegador del 15/09/2026; nuevos intentos del 16/09/2026 agotaron tiempo de espera: https://dtt-ecys.org/resources?r=10
 - Pénsum CLAR 2025: https://redesestudio.ingenieria.usac.edu.gt/redesDeEstudio/ingenieriaEnCienciasYSistemas/28/clar
 - Horario segundo semestre 2026: https://usuarios.ingenieria.usac.edu.gt/horarios/semestre/2
 
-`database/catalog.json` conserva la captura estructurada y la procedencia. `tools/import-catalog.py` permite repetir la extracción. No se inventaron docentes, créditos ni asignaciones. Las cuentas Ana y Luis Demo son ficticias.
+`database/catalog.json` conserva la captura estructurada y la procedencia. `node tools/import-catalog.mjs` reproduce el catálogo a partir de `database/dtt-2026-2.tsv` (transcripción de la lectura de navegador) y `database/pensum-clar-2025.json`. No necesita descargar páginas. La transcripción no incluye enlaces de reuniones. No se inventaron docentes, créditos ni asignaciones. Las cuentas Ana y Luis Demo son ficticias.

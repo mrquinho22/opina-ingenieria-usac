@@ -9,10 +9,19 @@ const data = JSON.parse(
 );
 const db = await pool.getConnection();
 try {
+  if (
+    data.semester !== "2026-2" ||
+    data.sources.horarios !== "https://dtt-ecys.org/resources?r=10" ||
+    data.courses.length < 75
+  )
+    throw Error(
+      "Catálogo incompleto o fuente inesperada; no se modificó la base.",
+    );
   await db.beginTransaction();
+  await db.execute("UPDATE courses SET publication_enabled=0");
   for (const c of data.courses)
     await db.execute(
-      "INSERT INTO courses(code,name,credits,publication_enabled,source) VALUES(?,?,?,?,?) ON DUPLICATE KEY UPDATE code=VALUES(code)",
+      "INSERT INTO courses(code,name,credits,publication_enabled,source) VALUES(?,?,?,?,?) ON DUPLICATE KEY UPDATE publication_enabled=VALUES(publication_enabled)",
       [c.code, c.name, c.credits, c.publication_enabled, c.source],
     );
   for (const a of data.assignments) {

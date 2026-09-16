@@ -19,7 +19,7 @@ export interface Course {
   id: number;
   code: string;
   name: string;
-  credits: number;
+  credits: number | null;
   publication_enabled: number;
 }
 export interface Teacher {

@@ -49,7 +49,7 @@ import { PostCard } from "./post-card";
                 <option value="">Todos los cursos</option>
                 @for (c of catalog()?.courses; track c.id) {
                   @if (c.publication_enabled) {
-                    <option [value]="c.id">{{ c.code }} · {{ c.name }}</option>
+                    <option [value]="c.id">{{ c.name }}</option>
                   }
                 }
               </select>
