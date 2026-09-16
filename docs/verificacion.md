@@ -50,6 +50,8 @@ Capturas reales en `docs/capturas/`. La fecha inicialmente mostraba seis horas d
 
 ## Git
 
+Comandos de arranque verificados también en una segunda sesión: script PowerShell de MySQL y `npm run dev`. Se desactivó la vigilancia automática de Node porque producía reinicios repetidos; para aplicar cambios al backend se reinicia el comando. Angular conserva su recarga de desarrollo.
+
 Remoto verificado: https://github.com/mrquinho22/opina-ingenieria-usac.git. Dos commits publicados en main; último `782fe98016eabb0cf2168737711b2062b0a8f8a8`, confirmado con `git ls-remote`. El resto permanece en completa-local. No force push, no reescritura de historia ni contribuciones inventadas.
 
 ## Alcance de las comprobaciones

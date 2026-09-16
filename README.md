@@ -62,7 +62,7 @@ Angular: http://127.0.0.1:4200. API: http://127.0.0.1:3000/api. No alternar `loc
 | `npm ci`                 | Instalar versiones del lockfile                             |
 | `npm run dev`            | Angular y Express                                           |
 | `npm start -w frontend`  | Solo Angular                                                |
-| `npm run dev -w backend` | Solo Express con recarga                                    |
+| `npm run dev -w backend` | Solo Express                                                |
 | `npm run build`          | Compilar Angular                                            |
 | `npm start`              | Servir API y frontend compilado en puerto 3000              |
 | `npm run db:setup`       | Crear esquema sin borrar datos                              |
