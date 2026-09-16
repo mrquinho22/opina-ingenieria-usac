@@ -1,0 +1,6 @@
+node_modules
+frontend/dist
+.local
+database/catalog.json
+package-lock.json
+output

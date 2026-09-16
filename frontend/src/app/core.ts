@@ -96,15 +96,19 @@ export const guard: CanActivateFn = async () => {
     await auth.load();
     return true;
   } catch {
+    auth.user.set(null);
     return router.createUrlTree(["/login"]);
   }
 };
 export const sessionInterceptor: HttpInterceptorFn = (req, next) => {
   const router = inject(Router);
+  const auth = inject(Auth);
   return next(req).pipe(
     catchError((e: HttpErrorResponse) => {
-      if (e.status === 401 && !req.url.includes("/auth/"))
+      if (e.status === 401 && !req.url.includes("/auth/")) {
+        auth.user.set(null);
         void router.navigate(["/login"]);
+      }
       return throwError(() => e);
     }),
   );
